@@ -1,0 +1,17 @@
+{
+  "name": "OreCounter",
+  "namespace": "hello_world",
+  "version_number": "1.1.1",
+  "description": "Tracking live total mineral ores",
+  "website_url": "",
+  "dependencies": [],
+  "extra": {
+	"godot": {
+	  "incompatibilities": [],
+	  "authors": ["hello_world"],
+	  "compatible_mod_loader_version": "4.1.0",
+	  "compatible_game_version": ["4.0.3","3.0.1"],
+	  "config_defaults": {}
+	}
+  }
+}

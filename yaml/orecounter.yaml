@@ -1,0 +1,15 @@
+orecounter:
+  type: supplement
+  limit: [orecounteraddon]
+  unlockslimits: [orecounteraddon]
+  scenes:
+    hud: mods-unpacked/hello_world-OreCounter/hud/OreCounter.tscn
+  predecessors: [keeper1, keeper2]
+  predecessorsAny: true
+
+ 
+orecounterreward:
+  type: reward
+  cost: 0
+  upgrades: [orecounter]
+

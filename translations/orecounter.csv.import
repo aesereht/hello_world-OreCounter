@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b50spsl3r7u6w"
+
+[deps]
+
+files=["res://mods-unpacked/hello_world-OreCounter/translations/orecounter.en.translation", "res://mods-unpacked/hello_world-OreCounter/translations/orecounter.pl.translation"]
+
+source_file="res://mods-unpacked/hello_world-OreCounter/translations/orecounter.csv"
+dest_files=["res://mods-unpacked/hello_world-OreCounter/translations/orecounter.en.translation", "res://mods-unpacked/hello_world-OreCounter/translations/orecounter.pl.translation"]
+
+[params]
+
+compress=true
+delimiter=0

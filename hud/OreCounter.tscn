@@ -1,0 +1,123 @@
+[gd_scene load_steps=8 format=3 uid="uid://b62a1dp13h7qy"]
+
+[ext_resource type="Script" path="res://mods-unpacked/hello_world-OreCounter/hud/OreCounter.gd" id="1_hh2ex"]
+[ext_resource type="FontVariation" path="res://gui/fonts/FontHudPixelartMonospaced.tres" id="2_c4jht"]
+[ext_resource type="LabelSettings" path="res://gui/fontsettings/HudPixelartMonospacedFontSettings.tres" id="3_spu7c"]
+[ext_resource type="Texture2D" uid="uid://djoy6voi70xo6" path="res://content/icons/icon_iron.png" id="4_2digv"]
+[ext_resource type="Texture2D" uid="uid://b6jc1mfc22tag" path="res://content/icons/icon_water.png" id="5_e0sd0"]
+[ext_resource type="Texture2D" uid="uid://bia4r4lcg51xx" path="res://content/drop/sand/sand_smol.png" id="6_kg0dl"]
+[ext_resource type="Texture2D" uid="uid://di6d05ur2w8hm" path="res://content/gadgets/ressourcepacker/chargingpoint.png" id="7_vki21"]
+
+[node name="OreCounter" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hh2ex")
+set_cooldown = null
+element_size = Vector2(18, 2)
+layoutWeights = Vector2(0, 1)
+layoutPriority = 1
+
+[node name="Counter" type="Label" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 9.0
+offset_top = 3.0
+offset_right = 54.0
+offset_bottom = 21.0
+scale = Vector2(0.333, 0.333)
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_c4jht")
+text = "999"
+label_settings = ExtResource("3_spu7c")
+horizontal_alignment = 2
+
+[node name="Counter2" type="Label" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 34.0
+offset_top = 3.0
+offset_right = 79.0
+offset_bottom = 21.0
+scale = Vector2(0.333, 0.333)
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_c4jht")
+text = "999"
+label_settings = ExtResource("3_spu7c")
+horizontal_alignment = 2
+
+[node name="Counter3" type="Label" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 62.0
+offset_top = 3.0
+offset_right = 107.0
+offset_bottom = 21.0
+scale = Vector2(0.333, 0.333)
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_c4jht")
+text = "999"
+label_settings = ExtResource("3_spu7c")
+horizontal_alignment = 2
+
+[node name="Counter4" type="Label" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 85.0
+offset_top = 3.0
+offset_right = 145.0
+offset_bottom = 21.0
+scale = Vector2(0.333, 0.333)
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_c4jht")
+text = "9999"
+label_settings = ExtResource("3_spu7c")
+horizontal_alignment = 2
+
+[node name="TextureRect1" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_top = 2.0
+offset_right = 24.0
+offset_bottom = 26.0
+scale = Vector2(0.3, 0.3)
+size_flags_horizontal = 0
+texture = ExtResource("4_2digv")
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 25.0
+offset_top = 2.0
+offset_right = 49.0
+offset_bottom = 26.0
+scale = Vector2(0.3, 0.3)
+size_flags_horizontal = 0
+texture = ExtResource("5_e0sd0")
+stretch_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 0
+offset_left = 51.0
+offset_top = 2.0
+offset_right = 78.0
+offset_bottom = 29.0
+scale = Vector2(0.3, 0.3)
+size_flags_horizontal = 0
+texture = ExtResource("6_kg0dl")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="Chargingpoint" type="Sprite2D" parent="."]
+position = Vector2(81, 5)
+texture = ExtResource("7_vki21")
